@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import ImageUploader from './components/ImageUploader';
+import CategoryList from './components/CategoryList';
+import Category from './components/Category';
 
 function App() {
+  const toogleModal = (show) => { console.log("clicked")}
   return (
+    <>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Welcome to My Fashion Trunk</h1>
       </header>
+      <main>
+      <div>
+        <ImageUploader />
+        <Category />
+        <h2>Categories</h2>
+        <CategoryList />
+      </div>
+    </main>
     </div>
+    </>
+    
   );
 }
 
