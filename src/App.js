@@ -1,7 +1,7 @@
 import './App.css';
 import ImageUploader from './components/ImageUploader';
 import CategoryList from './components/CategoryList';
-import Category from './components/Category';
+
 
 
 function App() {
@@ -18,8 +18,6 @@ function App() {
           <ImageUploader />
         </div>
         <div class="right-side">
-          <Category />
-          <h2>Categories</h2>
           <CategoryList />
         </div>
       </div>
